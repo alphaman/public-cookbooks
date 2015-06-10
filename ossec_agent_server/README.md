@@ -11,7 +11,11 @@
 
 ### Install the cookbook on your chef server
 
-Run ```knife cookbook install ossec_agent_server``` after putting the whole ossec_agent_server cookbook directory into the /var/chef/cookbooks directory.
+To install the ossec_agent_server cookbook follow the next steps:</br>
+1. ```git clone https://github.com/cloudaware/public-cookbooks```</br>
+2. ```cp -a public-cookbooks/ossec_agent_server /var/chef/cookbooks```</br>
+3. ```knife cookbook upload ossec_agent_server```</br>
+4. ```rm -fr public-cookbooks```</br>
 
 ### Create role
 
